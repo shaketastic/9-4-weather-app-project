@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script defer src= script.js></script>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="fixed-header">
+        <header>
+            <div id="logo">
+                <img src="assets/footer-Logo.png" alt="pursuit logo" width="300" />
+            </div>
+    
+    <div id="header-image-menu">
+            <ul class="navigation">
+                <li><a href="#" style="text-decoration: none; color: white;">MAPS</a></li>
+                <li><a href="#" style="text-decoration: none; color: white;">NEWS</a></li>
+                <li><a href="#" style="text-decoration: none; color: white;">SEVERE WEATHER</a></li>
+                <li><a href="#" style="text-decoration: none; color: white;">MORE</a></li>
+             </div>
+            </ul>
+        </header>
+    </div>
+
+    <div id="main">
+        <div id ="content">
+            <div id="weather-header">
+                <h1>Weather App</h1>
+                <strong><p>Search weather by location below</p></strong>
+                
+                <form id="pick-location">
+
+                    <label>Pick a location</label>
+                    <input
+                        id="location"
+                        name="location"
+                        type="text" 
+                        />
+                    <input type="submit" value="get weather &xrarr;" />
+                    <div id="error-message"></div>
+                </form>
+            </div>
+
+        <div id="current-location" class="display">
+            <br> <br> Choose a location to view the weather.
+        </div>
+        <div id="previous-searches" class="history">
+            <h4>Previous Searches</h4>
+            <div id="no-search-yet">No previous searches</div>
+            <ul id="previous-list"></ul>
+        </div>
+
+        <div id="forecast" class="display"></div>
+        </div>
+    </div>
+
+    <div class="fixed-footer">
+        <div id="fixed-footer-image">
+            <img src="assets/footerLogo.png" alt="pursuit logo" width="200" />
+        </div>
+    
+    <div class="container">Terms of Use | Privacy Policy | Cookie Policy | TAG Disclosure | Do Not Sell My Data</div>
+    </div>
+    
+</body>
+</html>
